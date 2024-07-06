@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | User-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form-container">
+            <label for="player-1">Player-1</label>
+            <input class="player-1" placeholder="Enter Player 1 Name">
+            <label for="player-2">Player-2</label>
+            <input class="player-2" placeholder="Enter Player 2 Name">
+            <button class="start-btn" type="submit">Start Game</button>
+        </form>
+        <div class="game-container">
+            <p class="game-info"></p>
+            <div class="tic-tac-toe">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+                <div class="box box6"></div>
+                
+                <div class="box box7"></div>
+                <div class="box box8"></div>
+                <div class="box box9"></div>
+                
+                
+            </div>
+            <audio id="clickSound">
+                <source src="./assets/click.wav" type="audio/mp3">
+            </audio>
+            <audio id="winSound">
+                <source src="./assests/win.mp3" type="audio/mp3">
+            </audio>
+            <audio id="drawSound">
+                <source src="./assests/sad.wav" type="audio/mp3">
+            </audio>
+            <audio id="clapping">
+                <source src="./assets/clapping.wav" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="winner-container">
+            <h3 class="winner-harcore"></h3>
+            <p class="winnerName">Kaustav</p>
+        </div>
+        <button class="btn">New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

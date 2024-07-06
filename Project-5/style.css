@@ -1,0 +1,190 @@
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kalam", sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(./assests/bg-2.jpg); */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 3rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    width: 90%;
+    max-width: 20rem;
+    padding: 1rem 1rem;
+    display: none;
+}
+
+.form-container.active{
+    display: flex;
+}
+
+.form-container input{
+    all:unset;
+    height:30px;
+    padding: 0 20px;
+    background-color:rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    margin: 1rem 0;
+    color: rgb(255, 255, 255);
+}
+
+.form-container label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-container input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container .start-btn {
+    all:unset;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: red;
+    border: 2px solid rgb(167, 29, 29);
+} 
+
+.game-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.game-container.active{
+    display: flex;
+}
+
+.game-info{
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 3rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+
+}
+
+.box {
+    cursor: pointer;
+    display: flex;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 2rem;
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: green;
+}
+
+.winner-container{
+    width: 90%;
+    background-image: url(./assets/winr2.png);
+    max-width: 20rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    color: white;
+    aspect-ratio: 1/1;
+    display: none;
+}
+.winner-container p{
+    color: yellow;
+    font-size: 3rem;
+}
+
+.winner-container.active{
+    display: flex;
+}
